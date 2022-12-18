@@ -4,11 +4,11 @@ import axios from "axios";
 import Web3Modal from "web3modal";
 
 import NFTCard from "../components/NFTCard";
-import { nftAddress, nftTransferAddress } from "../../../Contracts/congif";
+import { nftAddress, nftTransferAddress } from "../../Contracts/congif";
 
 
-import NFT from "../../../Contracts/artifacts/contracts/NFT.sol/NFT.json";
-import NFTTransfer from "../../../Contracts/artifacts/contracts/NFTTransfer.sol/NFTTransfer.json";
+import NFT from "../../Contracts/artifacts/contracts/NFT.sol/NFT.json";
+import NFTTransfer from "../../Contracts/artifacts/contracts/NFTTransfer.sol/NFTTransfer.json";
 
 export default function HomePage() {
     const [nfts, setNfts] = useState([]);
